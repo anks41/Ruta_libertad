@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi ruta hacia la libertad</title>
+<meta name="description" content="Orientación jurídica sobre el tratamiento penitenciario progresivo, la redención de pena y las fracciones de 1/3, 3/5 y 4/5 en Colombia. Consultorio Jurídico, Universidad Católica de Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<!--
+=====================================================================
+ CÓMO PONER LAS IMÁGENES Y GIFS
+ 1. Crea una carpeta "img" junto a este index.html.
+ 2. Guarda cada archivo con EXACTAMENTE el nombre que aparece en la
+    caja punteada (ejemplo: img/hero.gif). La página lo detecta sola
+    y reemplaza la caja por tu imagen o GIF.
+ 3. Si prefieres otro nombre o formato, cambia el src del <img> dentro
+    de la caja correspondiente (busca "SLOT:" en este archivo).
+ 4. Los textos marcados "Por confirmar" son detalles jurídicos que el
+    equipo debe verificar contra la norma vigente antes de publicar.
+=====================================================================
+-->
+
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- ===================== CABECERA ===================== -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Mi ruta hacia la libertad, inicio">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <path d="M4 25 C10 25 8 15 15 15 S20 5 26 5" stroke="#e0902a" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="4" cy="25" r="3" fill="#fff"/><circle cx="26" cy="5" r="3" fill="#e0902a"/>
+      </svg>
+      Mi ruta hacia la libertad
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menú</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#fases">Fases</a>
+      <a href="#redencion">Redención</a>
+      <a href="#fracciones">Fracciones</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#revisar">Qué revisar</a>
+      <a href="#autoridades">Autoridades</a>
+      <a href="#normativa">Normas</a>
+      <a class="cta" href="#infografia">Infografía</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ===================== SECCIÓN 1 · INICIO ===================== -->
+<div class="hero">
+  <!-- SLOT: fondo del héroe. GIF o imagen horizontal, 1920×1080. Sugerencia: rejas que se abren, camino, amanecer. -->
+  <figure class="media" data-label="GIF / IMAGEN DE FONDO&#10;img/hero.gif&#10;1920×1080 · horizontal">
+    <img src="img/hero.gif" alt="">
+  </figure>
+  <div class="wrap">
+    <span class="eyebrow">Consultorio Jurídico · Universidad Católica de Colombia</span>
+    <h1>Mi ruta hacia la libertad</h1>
+    <ul class="claims">
+      <li>Entiende cómo funciona el tratamiento penitenciario, fase por fase.</li>
+      <li>Descubre qué es la redención de pena y cómo se reconoce el tiempo.</li>
+      <li>Conoce qué significan 1/3, 3/5 y 4/5 de la condena, sin confusiones.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn" href="#fases">Comenzar la ruta</a>
+      <a class="btn ghost" href="#calculadora">Calculadora</a>
+      <a class="btn ghost" href="#infografia">Ver infografía</a>
+    </div>
+  </div>
+</div>
+<div class="legal-strip"><div class="wrap"><strong>Este sitio orienta, no decide.</strong> Ningún beneficio es automático y esta información no reemplaza la asesoría de un abogado.</div></div>
+
+<!-- Ruta de módulos -->
+<section id="ruta">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Empieza aquí</span>
+      <h2>Elige por dónde empezar</h2>
+      <p>No tienes que leerlo todo de corrido. Cada parte se entiende sola, y juntas muestran cómo se conectan las fases, la redención, el tiempo cumplido y los requisitos de cada beneficio.</p>
+    </div>
+    <div class="route-cards">
+      <a class="rcard" href="#fases">
+        <!-- SLOT: portada módulo 1. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/ruta-fases.webp&#10;800×600"><img src="img/ruta-fases.webp" alt="Fases del tratamiento penitenciario"></figure>
+        <h3>Fases del tratamiento penitenciario</h3>
+        <p>Qué es el tratamiento progresivo y cómo se avanza de una fase a otra.</p>
+        <span class="more">Ver las fases →</span>
+      </a>
+      <a class="rcard" href="#redencion">
+        <!-- SLOT: portada módulo 2. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/ruta-redencion.webp&#10;800×600"><img src="img/ruta-redencion.webp" alt="Redención de pena"></figure>
+        <h3>Mecanismos de redención de pena</h3>
+        <p>Trabajo, estudio y enseñanza: cuándo el tiempo se reconoce y cuándo no.</p>
+        <span class="more">Ver la redención →</span>
+      </a>
+      <a class="rcard" href="#fracciones">
+        <!-- SLOT: portada módulo 3. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/ruta-fracciones.webp&#10;800×600"><img src="img/ruta-fracciones.webp" alt="Fracciones de la condena"></figure>
+        <h3>Fracciones de la condena</h3>
+        <p>Qué significan 1/3, 3/5 y 4/5 y con qué beneficios se relacionan.</p>
+        <span class="more">Ver las fracciones →</span>
+      </a>
+      <a class="rcard" href="#normativa">
+        <!-- SLOT: portada módulo 4. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/ruta-normativa.webp&#10;800×600"><img src="img/ruta-normativa.webp" alt="Marco normativo"></figure>
+        <h3>Marco normativo y jurisprudencial</h3>
+        <p>Las leyes y sentencias que respaldan cada explicación.</p>
+        <span class="more">Ver las fuentes →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECCIÓN 2 · FASES ===================== -->
+<section id="fases" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Primero: el tratamiento</span>
+      <h2>Las fases del tratamiento: dónde estás y hacia dónde vas</h2>
+      <p>El tratamiento progresivo busca preparar a la persona para volver a la vida en libertad, con seguimiento y evaluación continua. Pasar de una fase a otra no ocurre solo porque pase el tiempo: depende de criterios que se evalúan.</p>
+    </div>
+
+    <div class="phases">
+      <ol class="steps" role="tablist" aria-label="Fases del tratamiento">
+        <li><button role="tab" aria-selected="true" aria-controls="p0" id="t0"><span class="dot">1</span>Observación, diagnóstico y clasificación</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="p1" id="t1" tabindex="-1"><span class="dot">2</span>Alta seguridad (período cerrado)</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1"><span class="dot">3</span>Mediana seguridad (período semiabierto)</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1"><span class="dot">4</span>Mínima seguridad (período abierto)</button></li>
+        <li><button role="tab" aria-selected="false" aria-controls="p4" id="t4" tabindex="-1"><span class="dot">5</span>Confianza</button></li>
+      </ol>
+
+      <div>
+        <!-- Ficha por fase: Finalidad · Participación de la PPL · Intervención institucional -->
+        <article class="ficha" id="p0" role="tabpanel" aria-labelledby="t0">
+          <h3>Observación, diagnóstico y clasificación</h3>
+          <dl>
+            <div><dt>Finalidad y objetivos del régimen</dt><dd>Se conoce a la persona y se define su plan de tratamiento.</dd></div>
+            <div><dt>Participación de la PPL</dt><dd>Compromiso con las actividades de tratamiento: trabajo, estudio y enseñanza.</dd></div>
+            <div><dt>Intervención institucional</dt><dd>El Consejo de Evaluación y Tratamiento (CET) y las instancias encargadas del seguimiento y la valoración.</dd></div>
+          </dl>
+        </article>
+        <article class="ficha" id="p1" role="tabpanel" aria-labelledby="t1" hidden>
+          <h3>Alta seguridad · período cerrado</h3>
+          <dl>
+            <div><dt>Finalidad y objetivos del régimen</dt><dd>Tratamiento con mayor control y seguimiento. Es el período cerrado.</dd></div>
+            <div><dt>Participación de la PPL</dt><dd>Compromiso con las actividades de tratamiento: trabajo, estudio y enseñanza.</dd></div>
+            <div><dt>Intervención institucional</dt><dd>El CET evalúa y hace seguimiento. El paso a otra fase depende de criterios reglamentarios previamente establecidos.</dd></div>
+          </dl>
+        </article>
+        <article class="ficha" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+          <h3>Mediana seguridad · período semiabierto</h3>
+          <dl>
+            <div><dt>Finalidad y objetivos del régimen</dt><dd>Más participación en actividades de tratamiento. Es el período semiabierto.</dd></div>
+            <div><dt>Participación de la PPL</dt><dd>Compromiso con las actividades de tratamiento: trabajo, estudio y enseñanza.</dd></div>
+            <div><dt>Intervención institucional</dt><dd>El CET evalúa y hace seguimiento de manera continua.</dd></div>
+          </dl>
+        </article>
+        <article class="ficha" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+          <h3>Mínima seguridad · período abierto</h3>
+          <dl>
+            <div><dt>Finalidad y objetivos del régimen</dt><dd>Preparación gradual para la vida en libertad. Es el período abierto.</dd></div>
+            <div><dt>Participación de la PPL</dt><dd>Compromiso con las actividades de tratamiento: trabajo, estudio y enseñanza.</dd></div>
+            <div><dt>Intervención institucional</dt><dd>El CET evalúa y hace seguimiento de manera continua.</dd></div>
+          </dl>
+        </article>
+        <article class="ficha" id="p4" role="tabpanel" aria-labelledby="t4" hidden>
+          <h3>Confianza</h3>
+          <dl>
+            <div><dt>Finalidad y objetivos del régimen</dt><dd>Fase final del proceso de resocialización. Coincide con la libertad condicional.</dd></div>
+            <div><dt>Participación de la PPL</dt><dd>Compromiso con las actividades de tratamiento: trabajo, estudio y enseñanza.</dd></div>
+            <div><dt>Intervención institucional</dt><dd>El CET evalúa y hace seguimiento de manera continua.</dd></div>
+          </dl>
+        </article>
+
+        <div class="phase-media">
+          <!-- SLOT: ilustración o GIF animado de la ruta de fases (los 5 pasos). 1200×675 -->
+          <figure class="media" data-label="GIF / IMAGEN&#10;img/fases-ruta.gif&#10;1200×675 · ruta de las 5 fases"><img src="img/fases-ruta.gif" alt="Ruta visual de las fases del tratamiento"></figure>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:2rem;background:transparent;color:var(--on-band-muted)">Saber en qué fase estás clasificado te ayuda a entender cuánto pesan tus actividades de tratamiento y cómo influye esa clasificación en los requisitos de cada beneficio. Las cinco fases siguen el artículo 144 de la Ley 65 de 1993. <span class="tbc">Por confirmar</span></p>
+  </div>
+</section>
+
+<!-- ===================== SECCIÓN 3 · REDENCIÓN ===================== -->
+<section id="redencion">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Después: la redención</span>
+      <h2>Redención de pena: cómo cuentan el trabajo, el estudio y la enseñanza</h2>
+      <p>No es lo mismo el tiempo que una persona lleva privada de la libertad que el tiempo que la ley reconoce por trabajar, estudiar o enseñar. Aquí se explica la diferencia.</p>
+    </div>
+
+    <div class="mods">
+      <article class="mod">
+        <!-- SLOT: trabajo. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/redencion-trabajo.webp&#10;800×600"><img src="img/redencion-trabajo.webp" alt="Trabajo"></figure>
+        <h3>Trabajo</h3>
+        <p>Actividades laborales que pueden reconocerse para redención, y la importancia de su certificación y evaluación conforme a las reglas vigentes.</p>
+      </article>
+      <article class="mod">
+        <!-- SLOT: estudio. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/redencion-estudio.webp&#10;800×600"><img src="img/redencion-estudio.webp" alt="Estudio"></figure>
+        <h3>Estudio</h3>
+        <p>Participación en actividades educativas y condiciones que deben cumplirse para que puedan reconocerse.</p>
+      </article>
+      <article class="mod">
+        <!-- SLOT: enseñanza. 800×600 -->
+        <figure class="media" data-label="IMAGEN&#10;img/redencion-ensenanza.webp&#10;800×600"><img src="img/redencion-ensenanza.webp" alt="Enseñanza"></figure>
+        <h3>Enseñanza</h3>
+        <p>Posibilidad de que ciertas actividades de instrucción o enseñanza se reconozcan según las disposiciones penitenciarias aplicables.</p>
+      </article>
+    </div>
+
+    <div class="split">
+      <div>
+        <h3>No basta con haber participado</h3>
+        <p>Los registros, las certificaciones y los procedimientos de reconocimiento importan. Además de participar en una actividad, deben verificarse las condiciones legales y administrativas correspondientes.</p>
+        <div class="compare">
+          <div><b>Tiempo cumplido</b>Los días que la persona ha permanecido físicamente privada de la libertad.</div>
+          <div><b>Tiempo redimido</b>El tiempo que la ley reconoce por trabajo, estudio o enseñanza debidamente certificados.</div>
+        </div>
+        <div class="stack-bar" role="img" aria-label="Ejemplo: 24 meses de tiempo físico y 6 meses de tiempo redimido"><div class="stack-physical">24 meses físicos</div><div class="stack-redeemed">6 redimidos</div></div>
+        <p class="note" style="margin-top:1.2rem">Los ejemplos de este sitio son pedagógicos. No son cálculos definitivos: el cómputo de la pena se verifica caso por caso, con la normativa vigente.</p>
+      </div>
+      <!-- SLOT: GIF o diagrama animado "tiempo cumplido vs. tiempo redimido". 1000×750 -->
+      <figure class="media" style="--ar:4/3" data-label="GIF / IMAGEN&#10;img/redencion-ejemplo.gif&#10;1000×750 · cumplido vs. redimido"><img src="img/redencion-ejemplo.gif" alt="Diferencia entre tiempo cumplido y tiempo redimido"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECCIÓN 4 · FRACCIONES ===================== -->
+<section id="fracciones" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Lo central: las fracciones</span>
+      <h2>¿Qué significan 1/3, 3/5 y 4/5 de la condena?</h2>
+      <p>Cada fracción se relaciona con un beneficio distinto y con condiciones propias. Compáralas con calma: no son etapas que se cumplan siempre en el mismo orden.</p>
+    </div>
+
+    <div class="fracs">
+      <article class="frac" style="--frac:var(--c1)">
+        <!-- SLOT (ya trae GIF propio): imagen o GIF de la fracción 1/3. 1280×720 -->
+        <figure class="media" data-label="IMAGEN / GIF&#10;img/fraccion-1-3.gif&#10;1280×720"><img src="img/fraccion-1-3.gif" alt="Una tercera parte de la pena"></figure>
+        <div class="frac-head"><span class="big">1/3</span><h3>Una tercera parte de la pena: permiso de salida de hasta 72 horas</h3></div>
+        <dl>
+          <div><dt>Qué significa</dt><dd>Haber descontado la tercera parte de la pena impuesta. Es un requisito, no el único.</dd></div>
+          <div><dt>Beneficio relacionado</dt><dd>Permiso de hasta 72 horas para salir del establecimiento, sin vigilancia.</dd></div>
+          <div><dt>Otros requisitos</dt><dd>Los demás del artículo 147 y su reglamentación, como la fase del tratamiento y la conducta. <span class="tbc">Por confirmar</span></dd></div>
+          <div><dt>Documentos útiles</dt><dd>Cómputo de la pena y redenciones, certificado de conducta, concepto del Consejo de Disciplina o del CET. <span class="tbc">Por confirmar</span></dd></div>
+          <div><dt>Quién interviene</dt><dd>La Dirección del INPEC, a través del establecimiento.</dd></div>
+          <div><dt>Qué puede impedirlo</dt><dd>Restricciones legales según el delito, órdenes de captura y mala conducta en permisos anteriores, que puede suspender los permisos hasta por seis meses.</dd></div>
+          </dl>
+        <div class="norm">Norma: Ley 65 de 1993, artículo 147</div>
+      </article>
+
+      <article class="frac" style="--frac:var(--c2)">
+        <!-- SLOT (ya trae GIF propio): imagen o GIF de la fracción 3/5. 1280×720 -->
+        <figure class="media" data-label="IMAGEN / GIF&#10;img/fraccion-3-5.gif&#10;1280×720"><img src="img/fraccion-3-5.gif" alt="Tres quintas partes de la pena"></figure>
+        <div class="frac-head"><span class="big">3/5</span><h3>Tres quintas partes de la pena: libertad condicional</h3></div>
+        <dl>
+          <div><dt>Qué significa</dt><dd>Haber cumplido las tres quintas partes de la pena.</dd></div>
+          <div><dt>Beneficio relacionado</dt><dd>Libertad condicional, que el juez concede o niega tras valorar el caso.</dd></div>
+          <div><dt>Otros requisitos</dt><dd>Adecuado desempeño y comportamiento durante el tratamiento, arraigo familiar y social, y las condiciones sobre reparación a la víctima.</dd></div>
+          <div><dt>Documentos útiles</dt><dd>Cómputo de la pena y redenciones, concepto del Consejo de Disciplina, soportes de arraigo. <span class="tbc">Por confirmar</span></dd></div>
+          <div><dt>Quién interviene</dt><dd>El juez de ejecución de penas y medidas de seguridad. El establecimiento aporta la documentación.</dd></div>
+          <div><dt>Qué puede impedirlo</dt><dd>Un concepto desfavorable del Consejo de Disciplina, la falta de arraigo o no cumplir lo exigido sobre la víctima.</dd></div>
+          </dl>
+        <div class="norm">Norma: Código Penal, artículo 64, modificado por el artículo 30 de la Ley 1709 de 2014</div>
+      </article>
+
+      <article class="frac" style="--frac:var(--c3)">
+        <!-- SLOT (ya trae GIF propio): imagen o GIF de la fracción 4/5. 1280×720 -->
+        <figure class="media" data-label="IMAGEN / GIF&#10;img/fraccion-4-5.gif&#10;1280×720"><img src="img/fraccion-4-5.gif" alt="Cuatro quintas partes de la pena"></figure>
+        <div class="frac-head"><span class="big">4/5</span><h3>Cuatro quintas partes de la pena: permiso de salida de hasta 15 días y libertad preparatoria</h3></div>
+        <dl>
+          <div><dt>Qué significa</dt><dd>Haber cumplido las cuatro quintas partes de la condena. No abre la libertad de forma automática.</dd></div>
+          <div><dt>Beneficio relacionado</dt><dd>Permiso de salida sin vigilancia por 15 días continuos, hasta 60 días al año, para quien ya se negó la libertad condicional. También la libertad preparatoria para trabajar.</dd></div>
+          <div><dt>Otros requisitos</dt><dd>Buena conducta certificada por el Consejo de Disciplina y no tener orden de captura vigente. La libertad preparatoria exige además que el sistema progresivo lo permita.</dd></div>
+          <div><dt>Documentos útiles</dt><dd>Certificado de conducta, cómputo de la pena, constancia sobre órdenes de captura. <span class="tbc">Por confirmar</span></dd></div>
+          <div><dt>Quién interviene</dt><dd>El Director Regional del INPEC en el permiso de salida. En la libertad preparatoria, el Consejo de Disciplina y el Director del INPEC.</dd></div>
+          <div><dt>Qué puede impedirlo</dt><dd>Mala conducta o retraso al volver de un permiso, que lo suspende seis meses, o de forma definitiva si se comete otro delito o una contravención especial de Policía.</dd></div>
+          </dl>
+        <div class="norm">Norma: Ley 65 de 1993, artículos 147A y 148</div>
+      </article>
+    </div>
+
+    <div class="warn" role="note">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 21h20L12 3Z"/><path d="M12 10v5M12 18.5v.01"/></svg>
+      <p><strong>Alcanzar una fracción no concede el beneficio.</strong> La concesión depende del análisis individual del caso, de los requisitos legales vigentes y de la valoración de las autoridades penitenciarias y judiciales competentes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CALCULADORA ORIENTATIVA ===================== -->
+<section id="calculadora" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Haz la cuenta</span>
+      <h2>Calculadora de tiempo cumplido</h2>
+      <p>Con la condena, las fechas y las horas de trabajo, estudio y enseñanza, estima cuánto tiempo lleva cumplido y cuánto falta para 1/3 (72 horas), 1/2 (domiciliaria), 3/5 (libertad condicional) y 70 %. Solo mide el tiempo: no decide si procede un beneficio.</p>
+    </div>
+    <div class="calc-examples">
+          <span class="calc-examples-label">Probar con un caso de ejemplo (datos inventados):</span>
+          <button type="button" class="btn btn-outline" data-ejemplo="A">Caso A: recién comienza</button>
+          <button type="button" class="btn btn-outline" data-ejemplo="B">Caso B: a mitad de camino</button>
+          <button type="button" class="btn btn-outline" data-ejemplo="C">Caso C: ya avanzado</button>
+        </div>
+    
+        <form id="calc-form" class="calc-form" novalidate>
+          <fieldset>
+            <legend>Condena</legend>
+            <div class="calc-fields">
+              <div class="field"><label for="penaAnios">Años</label><input id="penaAnios" name="penaAnios" type="number" inputmode="numeric" min="0" step="1" placeholder="0"></div>
+              <div class="field"><label for="penaMeses">Meses</label><input id="penaMeses" name="penaMeses" type="number" inputmode="numeric" min="0" step="1" placeholder="0"></div>
+              <div class="field"><label for="penaDias">Días</label><input id="penaDias" name="penaDias" type="number" inputmode="numeric" min="0" step="1" placeholder="0"></div>
+            </div>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Tiempo físico</legend>
+            <div class="calc-fields">
+              <div class="field"><label for="fechaInicio">Fecha de captura</label><input id="fechaInicio" name="fechaInicio" type="date"><small>Desde cuándo se cuenta la privación de la libertad.</small></div>
+              <div class="field"><label for="fechaCorte">Fecha de reporte</label><input id="fechaCorte" name="fechaCorte" type="date"><small>Hasta cuándo se cuenta. Por defecto, hoy.</small></div>
+            </div>
+          </fieldset>
+    
+          <fieldset>
+            <legend>Redención 2×3: horas realizadas</legend>
+            <div class="calc-fields">
+              <div class="field"><label for="horasTrabajo">Horas de trabajo</label><input id="horasTrabajo" name="horasTrabajo" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+              <div class="field"><label for="horasEstudio">Horas de estudio</label><input id="horasEstudio" name="horasEstudio" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+              <div class="field"><label for="horasEnsenanza">Horas de enseñanza</label><input id="horasEnsenanza" name="horasEnsenanza" type="number" inputmode="decimal" min="0" step="any" placeholder="0"></div>
+            </div>
+            <p class="field"><small>6 horas = 1 día equivalente. Por cada 3 días de actividad se redimen 2 días de condena. Se calcula por separado en cada actividad.</small></p>
+          </fieldset>
+    
+          <div class="calc-actions">
+            <button type="submit" class="btn btn-primary">Calcular</button>
+            <button type="reset" class="btn btn-outline">Limpiar</button>
+          </div>
+        </form>
+    
+        <div id="calc-errores" class="calc-errors" role="alert" hidden></div>
+        <div id="calc-resultado" class="calc-result" aria-live="polite" hidden></div>
+    <p class="calc-method">Cómo se calcula: la condena se pasa a días (mes de 30 días, año de 360). El tiempo físico es la fecha de reporte menos la de captura. La redención sale de las horas: días equivalentes = horas ÷ 6 (parte entera) y días redimidos = (días equivalentes ÷ 3, parte entera) × 2. El tiempo cumplido es el físico más lo redimido, y cada fracción se redondea al día más cercano. Se basa en la Ley 2466 de 2025 y el fallo STP5152-2026, según el cómputo entregado. <span class="tbc">Por confirmar</span></p>
+  </div>
+</section>
+
+<!-- ===================== SECCIÓN 5 · QUÉ REVISAR ===================== -->
+<section id="revisar">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Antes de pedir nada</span>
+      <h2>¿Qué debo revisar antes de solicitar un beneficio?</h2>
+      <p>Cumplir una fracción no lo es todo. Se revisan juntas varias condiciones jurídicas y administrativas, y esta lista te ayuda a no dejar ninguna por fuera.</p>
+    </div>
+
+    <div class="check">
+      <ul class="checklist" id="checklist">
+        <li><label><input type="checkbox"><span><strong>Situación jurídica</strong><small>Confirme que la persona es condenada y que no hay trámites pendientes que cambien el análisis.</small></span></label></li>
+        <li><label><input type="checkbox"><span><strong>Pena impuesta</strong><small>Verifique la sentencia y el tiempo total de la condena.</small></span></label></li>
+        <li><label><input type="checkbox"><span><strong>Tiempo cumplido</strong><small>Cuente el tiempo efectivamente privado de la libertad.</small></span></label></li>
+        <li><label><input type="checkbox"><span><strong>Redenciones reconocidas</strong><small>Revise qué periodos ya fueron reconocidos y cuáles siguen pendientes de certificar.</small></span></label></li>
+        <li><label><input type="checkbox"><span><strong>Fase del tratamiento</strong><small>Identifique en qué fase está clasificada la persona.</small></span></label></li>
+        <li><label><input type="checkbox"><span><strong>Condiciones del beneficio</strong><small>Revise conducta, arraigo y los demás requisitos de ese beneficio en concreto.</small></span></label></li>
+        <li><label><input type="checkbox"><span><strong>Restricciones y requerimientos</strong><small>Busque restricciones legales, órdenes de captura u otras circunstancias que afecten el trámite.</small></span></label></li>
+      </ul>
+      <aside class="meter" aria-live="polite">
+        <div class="n"><span id="count">0</span> / 7</div>
+        <div class="bar"><i id="barfill"></i></div>
+        <p>aspectos revisados. Esta lista no determina si una persona tiene derecho a la libertad o a un beneficio. Sirve para saber qué falta revisar y cuándo buscar acompañamiento jurídico.</p>
+        <button type="button" id="reset">Reiniciar lista</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECCIÓN 6 · AUTORIDADES ===================== -->
+<section id="autoridades" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Quién hace qué</span>
+      <h2>¿Quién certifica, quién evalúa y quién decide?</h2>
+      <p>Certificar una actividad, evaluar el tratamiento y decidir sobre un beneficio son cosas distintas, y cada una la hace una autoridad diferente según el beneficio.</p>
+    </div>
+    <div class="auth">
+      <div class="box"><h3>Certificación de actividades</h3><p>El establecimiento certifica las actividades de trabajo, estudio o enseñanza.</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="box"><h3>Evaluación y seguimiento</h3><p>Las instancias penitenciarias valoran la conducta y el avance del tratamiento: Consejo de Evaluación y Tratamiento (CET), Consejo de Disciplina y junta de evaluación de trabajo, estudio y enseñanza.</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="box"><h3>Decisión sobre el beneficio</h3><p>Decide la autoridad competente según el beneficio: el juez de ejecución de penas y medidas de seguridad (libertad condicional) o el INPEC (permisos y libertad preparatoria).</p></div>
+    </div>
+    <!-- SLOT: esquema o GIF del procedimiento. 1600×600 -->
+    <figure class="media" style="--ar:8/3;margin-top:2rem" data-label="GIF / IMAGEN&#10;img/autoridades-esquema.gif&#10;1600×600 · esquema del procedimiento"><img src="img/autoridades-esquema.gif" alt="Esquema de autoridades y procedimiento"></figure>
+    <p class="note" style="margin-top:1.5rem">Este esquema muestra pasos generales de orientación y no sustituye las reglas procesales específicas de cada caso.</p>
+  </div>
+</section>
+
+<!-- ===================== INFOGRAFÍA ===================== -->
+<section id="infografia">
+  <div class="wrap info">
+    <!-- SLOT: infografía completa (vista previa). Vertical 3:4, mínimo 1200×1600 -->
+    <figure class="media contain" data-label="IMAGEN&#10;img/infografia.webp&#10;1200×1600 · vertical"><img src="img/infografia.webp" alt="Infografía Mi ruta hacia la libertad"></figure>
+    <div>
+      <span class="tag">Para llevar en papel</span>
+      <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-block:.8rem 1rem">La infografía, para llevarla contigo</h2>
+      <p style="color:var(--muted)">La página explica con detalle; la infografía lo resume en una sola hoja para consultarla rápido y recordar la ruta general. Tiene cinco bloques:</p>
+      <ol class="blocks">
+        <li><b>1</b><span>El tratamiento penitenciario y sus fases.</span></li>
+        <li><b>2</b><span>La redención de pena: trabajo, estudio y enseñanza.</span></li>
+        <li><b>3</b><span>Las fracciones de 1/3, 3/5 y 4/5 y sus beneficios.</span></li>
+        <li><b>4</b><span>Requisitos que deben verificarse.</span></li>
+        <li><b>5</b><span>Orientación y consulta, con las referencias normativas.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECCIÓN 4 (MENÚ) · NORMATIVA ===================== -->
+<section id="normativa" class="band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">De dónde sale todo</span>
+      <h2>Las normas que respaldan esta información</h2>
+      <p>Cada explicación se apoya en estas fuentes. Las dejamos aparte para que puedas revisar la norma directamente.</p>
+    </div>
+    <div class="norms">
+      <article class="norm-card" style="background:var(--surface);color:var(--ink)">
+        <div class="y">1993</div>
+        <h3>Ley 65 de 1993</h3>
+        <p>Código Penitenciario y Carcelario.</p>
+        <ul><li>Art. 144 · fases del tratamiento <span class="tbc">Por confirmar</span></li><li>Art. 147 · permiso de hasta 72 horas (1/3)</li><li>Art. 147A · permiso de salida de hasta 15 días (4/5)</li><li>Art. 148 · libertad preparatoria (4/5)</li></ul>
+      </article>
+      <article class="norm-card" style="background:var(--surface);color:var(--ink)">
+        <div class="y">2000</div>
+        <h3>Ley 599 de 2000</h3>
+        <p>Código Penal.</p>
+        <ul><li>Art. 64 · libertad condicional (3/5), modificado por el art. 30 de la Ley 1709 de 2014</li></ul>
+      </article>
+      <article class="norm-card" style="background:var(--surface);color:var(--ink)">
+        <div class="y">2014</div>
+        <h3>Ley 1709 de 2014</h3>
+        <p>Reformó artículos de la Ley 65 de 1993 y del Código Penal, incluido el artículo 64.</p>
+        <ul><li>Jurisprudencia: sentencia C-757 de 2014 <span class="tbc">Completar</span></li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ORIENTACIÓN ===================== -->
+<section id="orientacion">
+  <div class="wrap">
+    <div class="orient band" style="padding:clamp(1.5rem,4vw,3rem);border-radius:var(--radius)">
+      <div>
+        <span class="eyebrow">Orientación y consulta</span>
+        <h2>¿Tienes dudas sobre tu situación o el procedimiento?</h2>
+        <p>Verifica tu situación jurídica individual y pide orientación cuando existan dudas sobre los requisitos. Este sitio no reemplaza el estudio de cada caso ni la decisión de las autoridades.</p>
+        <div class="btns">
+          <a class="btn" href="#contacto">Contacto del Consultorio Jurídico</a>
+          <a class="btn ghost" href="#revisar">Volver a la lista de revisión</a>
+        </div>
+      </div>
+      <!-- SLOT: imagen de orientación / Consultorio Jurídico. 800×600 -->
+      <figure class="media" style="--ar:4/3" data-label="IMAGEN / GIF&#10;img/orientacion.webp&#10;800×600"><img src="img/orientacion.webp" alt="Orientación jurídica"></figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== PIE ===================== -->
+<footer id="contacto">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <p>Consultorio Jurídico<br>Universidad Católica de Colombia<br>Bogotá D.C.</p>
+        <p style="margin-top:.8rem">Contacto: <span class="tbc">Por confirmar</span></p>
+      </div>
+      <div>
+        <h4>Integrantes</h4>
+        <ul>
+          <li>María Paula Moreno Aponte</li>
+          <li>Carol Daniela Coronado Díaz</li>
+          <li>Sergio Alejandro Rodríguez Cortés</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#fases">Fases del tratamiento</a></li>
+          <li><a href="#redencion">Redención de pena</a></li>
+          <li><a href="#fracciones">Fracciones 1/3, 3/5 y 4/5</a></li>
+          <li><a href="#revisar">Antes de solicitar</a></li>
+          <li><a href="#normativa">Marco normativo</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">Contenido pedagógico e informativo. No constituye asesoría jurídica individual. © 2026 Mi ruta hacia la libertad · Universidad Católica de Colombia.</p>
+  </div>
+</footer>
+
+<script src="js/calculo.js" defer></script>
+<script src="js/calculadora-ui.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
